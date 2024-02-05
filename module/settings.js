@@ -33,7 +33,7 @@ export default function registerSystemSettings() {
 
   game.settings.register("deltagreen", "sortSkillsColumn", {
     name: "Sort Skills Column-wise",
-    hint: "Orders the skills on a sheet to alphabetical ascending order column-wise.",
+    hint: "Orders the skills on a sheet to alphabetical ascending order column-wise. Client side setting.",
     scope: "client",
     config: true,
     requiresReload: true,
