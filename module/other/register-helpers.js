@@ -82,7 +82,7 @@ export default function registerHandlebarsHelpers() {
         console.log(ex);
         return "";
       }
-    },
+    }
   );
 
   Handlebars.registerHelper("getAvailableRollModes", () => {
@@ -121,7 +121,7 @@ export default function registerHandlebarsHelpers() {
       } catch (error) {
         return console.log(error);
       }
-    },
+    }
   );
 
   Handlebars.registerHelper("localizeWeaponSkill", (skill) => {
@@ -161,7 +161,7 @@ export default function registerHandlebarsHelpers() {
       }
 
       return showValue;
-    },
+    }
   );
 
   // looks at system setting for what font to use and returns the class that is then used in the handlebars template that
@@ -171,7 +171,7 @@ export default function registerHandlebarsHelpers() {
 
     const characterSheetStyle = game.settings.get(
       "deltagreen",
-      "characterSheetStyle",
+      "characterSheetStyle"
     );
 
     /*
@@ -211,7 +211,7 @@ export default function registerHandlebarsHelpers() {
   Handlebars.registerHelper("getCharacterSheetStyle", () => {
     const characterSheetStyle = game.settings.get(
       "deltagreen",
-      "characterSheetStyle",
+      "characterSheetStyle"
     );
 
     if (characterSheetStyle === "cowboy") {
@@ -239,6 +239,10 @@ export default function registerHandlebarsHelpers() {
     return setting;
   });
 
+  Handlebars.registerHelper("sortSkillsColumn", () => {
+    return game.settings.get("deltagreen", "sortSkillsColumn");
+  });
+
   Handlebars.registerHelper("playerHasGamemasterPrivileges", () => {
     return game.user.isGM;
   });
@@ -247,7 +251,7 @@ export default function registerHandlebarsHelpers() {
     let result = false;
     const setting = game.settings.get(
       "deltagreen",
-      "showImpossibleLandscapesContent",
+      "showImpossibleLandscapesContent"
     );
 
     if (game.user.isGM === true && setting === true) {

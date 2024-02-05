@@ -96,8 +96,14 @@
             <span>{{localize "DG.Sheet.BlockHeaders.SkillsAndTraining"}}</span>                                                    
           </div>
           
+          {{#if (sortSkillsColumn)}}
             <div class="flex-3col">
+          {{/if}}
 
+          {{#unless (sortSkillsColumn)}}
+            <div class="grid grid-3col">
+          {{/unless}}
+          
               {{#each actor.system.skills as |skill key|}}
               
                 <div class="flexrow flex-group-center flex-thin-border">

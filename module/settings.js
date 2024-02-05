@@ -31,6 +31,16 @@ export default function registerSystemSettings() {
     default: false,
   });
 
+  game.settings.register("deltagreen", "sortSkillsColumn", {
+    name: "Sort Skills Column-wise",
+    hint: "Orders the skills on a sheet to alphabetical ascending order column-wise.",
+    scope: "client",
+    config: true,
+    requiresReload: true,
+    type: Boolean,
+    default: false,
+  });
+
   game.settings.register("deltagreen", "skillImprovementFormula", {
     name: "Default Skill Improvement Roll",
     hint: " Default 1d4. There have been multiple errata on this, choose which fits best for the pace of your game.",
