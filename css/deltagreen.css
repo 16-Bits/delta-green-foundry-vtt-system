@@ -281,6 +281,14 @@ input.breaking-point-hit {
   text-align: left;
 }
 
+.flex-3col {
+  height: calc(100% / 3);
+  width: calc(100% / 3);
+  display: flex;
+  flex-flow: column wrap;
+  flex-wrap: wrap;
+}
+
 .deltagreen .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 400px;
