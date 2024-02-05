@@ -282,8 +282,8 @@ input.breaking-point-hit {
 }
 
 .flex-3col {
-  height: calc(100% / 3);
-  width: calc(100% / 3);
+  height: 33%;
+  width: 33%;
   display: flex;
   flex-flow: column wrap;
   flex-wrap: wrap;
