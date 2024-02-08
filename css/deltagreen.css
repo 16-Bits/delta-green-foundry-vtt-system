@@ -226,6 +226,7 @@ input.breaking-point-hit {
   border-radius: 2px;
   border-left-color: darkslategray;
   border-left-width: 4px;
+  min-height: 27px;
 }
 
 /* Make sure Special Training boxes are the same height
@@ -282,7 +283,7 @@ input.breaking-point-hit {
 }
 
 .flex-3col {
-  height: 33%;
+  height: 400px;
   width: 33%;
   display: flex;
   flex-flow: column wrap;
